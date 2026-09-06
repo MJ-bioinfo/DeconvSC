@@ -1,0 +1,28 @@
+input:
+  processed_dir: work/hca/preprocess
+  metadata_file: sc_metadata.pkl
+
+model:
+  # HCA AttentionVAE dims (match the deconv_20260610 canonical fold_2 architecture).
+  hidden_size_list: [2048, 1024, 512]
+  mid_hidden_size: 512
+  embedding_dim: 32
+  nhead: 4
+  num_layers: 2
+  ff_dim: 64
+
+training:
+  epochs: 50
+  batch_size: 512
+  learning_rate: 0.00005
+
+runtime:
+  seed: 18
+  device: cuda
+
+output:
+  # NOTE: the canonical runnable arm ships the deconv_0610 checkpoint here already; running this
+  # train stage RETRAINS from scratch and OVERWRITES output/hca/train/scvae_best.pth.
+  output_dir: work/hca/train
+  checkpoint_name: scvae_best.pth
+  prior_name: cell_type_mu_logvar_best.pt

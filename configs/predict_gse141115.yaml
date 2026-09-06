@@ -1,0 +1,48 @@
+input:
+  processed_dir: work/gse141115/preprocess
+  metadata_file: sc_metadata.pkl
+  bulk_path: processed_data/real_data/mouse_kidney/bulk_counts.txt
+  checkpoint: model_weights/GSE141115/deconvsc/scvae_best.pth
+  prior: model_weights/GSE141115/deconvsc/cell_type_mu_logvar_best.pt
+
+samples:
+  target_samples: [LDK1, LDK2, LDK3, LDK4, LDK5, LDK6]
+
+model:
+  hidden_size_list: [4096, 2048, 1024]
+  mid_hidden_size: 256
+  embedding_dim: 32
+  nhead: 4
+  num_layers: 4
+  ff_dim: 64
+
+inference:
+  cells_per_celltype: 500       # cell budget = n_cell_types * cells_per_celltype
+
+# DeconvSC generation: the prior-anchored method (frozen per-cell-type prior centroid +
+# bulk-conditioned residual) with prophead-predicted cell-type proportions.
+generation:
+  alpha: 1.0                    # residual strength; 0 = pure-prior centroid only (downside-protected)
+  # 20-type reference matching the deconv_20260610 canonical model (Tub+dLOH merged into 'others');
+  # '__lab' is that merged 20-class label column.
+  sc_ref_path: processed_data/real_data/mouse_kidney/train_data_canonical20.h5ad
+  donor_col: sample
+  celltype_label: __lab
+  residual:                     # bulk-conditioned expression residual (marker∪core genes)
+    epochs: 60
+    n_top_markers: 30
+    lr: 0.001
+    full_mask: false            # residual restricted to marker∪core genes (recommended)
+  prophead:                     # amortised proportion head (pi_ref-sampled pseudobulks + input noise)
+    epochs: 120
+    k_pseudobulks: 200          # synthetic pseudobulks per donor
+    noise_std: 0.2              # Scaden-style input augmentation (single-cell -> real-bulk gap)
+
+runtime:
+  seed: 18
+  device: cuda
+
+output:
+  output_dir: work/gse141115/predict
+  generated_h5ad: generated_data.h5ad
+  generated_metadata: generated_metadata.csv

@@ -1,0 +1,6 @@
+artifact,field,shape_run1,shape_run2,max_abs_difference,exact_match
+module_l2_withinType_dists.npz,Route2,"(50,)","(50,)",0.0,True
+module_l2_withinType_dists.npz,BaseVAE,"(50,)","(50,)",0.0,True
+module_l2_withinType_dists.npz,p,(),(),0.0,True
+module_l2_withinType_dists.npz,kept,(),(),0.0,True
+module_l2_withinType_summary.csv,full_table,"(2, 7)","(2, 7)",0.0,True

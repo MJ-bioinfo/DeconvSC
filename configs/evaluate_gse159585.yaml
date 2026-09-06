@@ -1,0 +1,35 @@
+input:
+  generated_h5ad: work/gse159585/predict/generated_data.h5ad
+  real_sc_path: processed_data/real_data/human_lung/test_data.h5ad
+  other_generated_h5ad: null
+
+annotation:
+  real_celltype_key: "cell type"
+  real_sample_key: null          # GSE159585 has no per-sample structure (sample_level=false)
+  generated_celltype_key: "Cell_type"
+  generated_sample_key: "Sample"
+  gt_sample_map: null
+
+evaluation:
+  real_is_raw: true
+  sample_level: false            # collapse generated cells to per-cell-type pseudobulks
+  marker_top_n: 30
+  heatmap_top_n: 5
+  umap_per_sample: 90
+  umap_sample_limit: 28
+  make_umap: true
+  make_heatmap: true
+  emf: true
+  # (legacy attention / co-expression analyses only)
+  normalize_real_sc: true
+  target_sum: 10000
+  log1p: true
+  n_top_genes_network: 500
+  n_top_genes_attention: 1000
+
+runtime:
+  seed: 18
+  device: cpu
+
+output:
+  output_dir: work/gse159585/evaluate

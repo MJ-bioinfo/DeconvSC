@@ -1,0 +1,5 @@
+panel,plot_metric,n_cell_types,deconvsc_mean,basevae_mean,deconvsc_wins,plot_style,density_layer_displayed,boxplot_displayed,paired_points_displayed,paired_lines_displayed,statistical_annotation_displayed
+a,hub_jaccard,6,0.12400354579560002,0.11611871279949042,5,boxplot,False,True,True,False,False
+b,mi_fidelity_error,6,0.10923963415092885,0.8286226584545623,6,boxplot,False,True,True,False,False
+c,module_l2,6,0.016130774122511283,0.047186126607332325,6,boxplot,False,True,True,False,False
+d,coexpression_profile_pcc_pca50,6,0.678431684345396,0.379586292863557,6,boxplot,False,True,True,False,False

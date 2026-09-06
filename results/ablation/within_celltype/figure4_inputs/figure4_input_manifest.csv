@@ -1,0 +1,6 @@
+panel_or_use,file,format,keys_or_columns,unit,recommendation
+panels_a_to_c,topology_metrics_long.csv,tidy_csv,"analysis;unit;cell_type;method;display_method;metric;value;better;n_seeds_averaged",cell_type,source for hub Jaccard; MI error; and module L2
+panel_d,figure4d_pca50_symmetric_profile_pcc.csv,tidy_csv,"setting;panel_size;cell_type;comparison;n_seeds;n_cells_per_source_mean_over_seeds;n_genes_mean_over_seeds;plotted_value;profile_pcc_raw_median_sd_over_seeds;real_cell_split",cell_type,authoritative PCA<=50 per-gene profile PCC without splitting real cells
+significance_and_effect,paired_statistics.csv,csv,"metric;p_one_sided;p_two_sided;p_one_sided_holm;effect;CI",cell_type,use exact paired results; do not recompute from plotted modules or seeds
+compact_legacy_metrics,within_celltype_panel_data.npz,npz,"cell_types;hubJ_*;mierr_*;modL2_*;edgeMAE_*;netfid_*;netpcc_*",cell_type,legacy archive; do not use edgeMAE or netfid as current Figure 4d
+panel_c_legacy_loader,module_l2_withinType_dists.npz,npz,"Route2;BaseVAE;cell_types;p;p_two_sided;unit;value_definition",cell_type,drop-in key compatibility for current panel-C loader

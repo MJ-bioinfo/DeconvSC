@@ -1,0 +1,61 @@
+CellType,Value,Method
+B cells,0.471731527067104,BayesPrism
+Intercalated CD cells,0.508143328174061,BayesPrism
+Pricipal CD cells,0.622901827268524,BayesPrism
+Transitional CD cells,0.715534617358885,BayesPrism
+Connecting tubule cells,0.5091368498711,BayesPrism
+Distal convoluted tubule cell,0.600896318120316,BayesPrism
+Endothelial cells,0.779303462741112,BayesPrism
+Fibroblasts,0.639511548447275,BayesPrism
+Macrophages,0.711329435417953,BayesPrism
+Mesangium cells,0.622165609325521,BayesPrism
+NK cells,0.499761468754856,BayesPrism
+Proximal tubule cells,0.708836239354409,BayesPrism
+Podocytes,0.81121690298131,BayesPrism
+T cells,0.516984994438186,BayesPrism
+Ascending loop of Henle,0.631910019757749,BayesPrism
+B cells,0.655427614637866,DISSECT
+Intercalated CD cells,0.720593427669137,DISSECT
+Pricipal CD cells,0.668600137725735,DISSECT
+Transitional CD cells,0.654390458321613,DISSECT
+Connecting tubule cells,0.620602489539946,DISSECT
+Distal convoluted tubule cell,0.630285193118619,DISSECT
+Endothelial cells,0.714523868450128,DISSECT
+Fibroblasts,0.762294577549977,DISSECT
+Macrophages,0.652522052553422,DISSECT
+Mesangium cells,0.71353990115031,DISSECT
+NK cells,0.643285814792811,DISSECT
+Proximal tubule cells,0.633292468701321,DISSECT
+Podocytes,0.821116710437188,DISSECT
+T cells,0.680536870078644,DISSECT
+Ascending loop of Henle,0.568155692067878,DISSECT
+B cells,0.619630299873778,TAPE
+Intercalated CD cells,0.745336300695188,TAPE
+Pricipal CD cells,0.711196755156179,TAPE
+Transitional CD cells,-0.0471290374026185,TAPE
+Connecting tubule cells,0.665520530123102,TAPE
+Distal convoluted tubule cell,0.595966317993621,TAPE
+Endothelial cells,0.745373337090211,TAPE
+Fibroblasts,0.697921865368287,TAPE
+Macrophages,0.542730812719776,TAPE
+Mesangium cells,0.718024178557571,TAPE
+NK cells,0.669083610407106,TAPE
+Proximal tubule cells,0.32549837720004,TAPE
+Podocytes,0.76312006855812,TAPE
+T cells,0.703702218000733,TAPE
+Ascending loop of Henle,-0.159534267459254,TAPE
+B cells,0.828367068587046,DeconvSC
+Intercalated CD cells,0.912137868667555,DeconvSC
+Pricipal CD cells,0.894915752810452,DeconvSC
+Transitional CD cells,0.859671767427448,DeconvSC
+Connecting tubule cells,0.861169204409883,DeconvSC
+Distal convoluted tubule cell,0.851557332654081,DeconvSC
+Endothelial cells,0.911578654708908,DeconvSC
+Fibroblasts,0.892933976599868,DeconvSC
+Macrophages,0.875575324706251,DeconvSC
+Mesangium cells,0.886963999677736,DeconvSC
+NK cells,0.840661248599504,DeconvSC
+Proximal tubule cells,0.872850151564891,DeconvSC
+Podocytes,0.907750130912458,DeconvSC
+T cells,0.879205644213598,DeconvSC
+Ascending loop of Henle,0.791319986097899,DeconvSC

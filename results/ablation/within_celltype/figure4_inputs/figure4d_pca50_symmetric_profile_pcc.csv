@@ -1,0 +1,13 @@
+setting,panel_size,cell_type,comparison,n_seeds,n_cells_per_source_mean_over_seeds,n_genes_mean_over_seeds,plotted_value,profile_pcc_raw_median_sd_over_seeds,real_cell_split
+pca50_symmetric_lw_no_real_split,200,CD_PC,BaseVAE_vs_Real,10,358.0,200.0,0.4408996107929977,0.0143399379055545,False
+pca50_symmetric_lw_no_real_split,200,CD_PC,DeconvSC_vs_Real,10,358.0,200.0,0.7922915861239141,0.0073088252856197,False
+pca50_symmetric_lw_no_real_split,200,CNT,BaseVAE_vs_Real,10,151.0,200.0,0.3326196808952429,0.0333635517461936,False
+pca50_symmetric_lw_no_real_split,200,CNT,DeconvSC_vs_Real,10,151.0,200.0,0.5671630923229698,0.0230413996183865,False
+pca50_symmetric_lw_no_real_split,200,DCT,BaseVAE_vs_Real,10,245.0,200.0,0.2784968398135675,0.0498174836786594,False
+pca50_symmetric_lw_no_real_split,200,DCT,DeconvSC_vs_Real,10,245.0,200.0,0.509937369855611,0.0387709923740951,False
+pca50_symmetric_lw_no_real_split,200,MC,BaseVAE_vs_Real,10,196.0,200.0,0.3272207476587314,0.0206933268535533,False
+pca50_symmetric_lw_no_real_split,200,MC,DeconvSC_vs_Real,10,196.0,200.0,0.7476535685294662,0.0093561843779917,False
+pca50_symmetric_lw_no_real_split,200,PT,BaseVAE_vs_Real,10,600.0,200.0,0.5233340844366319,0.0277342553180491,False
+pca50_symmetric_lw_no_real_split,200,PT,DeconvSC_vs_Real,10,600.0,200.0,0.7322463103766581,0.010765979993646,False
+pca50_symmetric_lw_no_real_split,200,aLOH,BaseVAE_vs_Real,10,600.0,200.0,0.3749467935841705,0.0138567027077087,False
+pca50_symmetric_lw_no_real_split,200,aLOH,DeconvSC_vs_Real,10,600.0,200.0,0.7212981788637566,0.0122950676843247,False

@@ -1,0 +1,49 @@
+input:
+  processed_dir: work/hca/preprocess
+  metadata_file: sc_metadata.pkl
+  bulk_path: processed_data/simulation_data/HCA/bulk_synthetic.txt
+  sep: "\t"
+  checkpoint: model_weights/HCA/fold2/scvae_best.pth
+  prior: model_weights/HCA/fold2/cell_type_mu_logvar_best.pt
+
+samples:
+  # Empty -> deconvolve ALL bulk columns (the 105 pseudo_bulk_id simulated bulks).
+  target_samples: []
+
+model:
+  # HCA AttentionVAE dims (deconv_20260610 canonical fold_2 checkpoint).
+  hidden_size_list: [2048, 1024, 512]
+  mid_hidden_size: 512
+  embedding_dim: 32
+  nhead: 4
+  num_layers: 2
+  ff_dim: 64
+
+inference:
+  cells_per_celltype: 900       # 23 types * 900 ~= 20.7k cells over 105 bulks (~200/bulk)
+
+# DeconvSC generation: prior-anchored expression (frozen per-type prior centroid + bulk-conditioned
+# residual) + prophead-predicted proportions.
+generation:
+  alpha: 1.0
+  sc_ref_path: processed_data/simulation_data/HCA/reference.h5ad
+  donor_col: donor_id           # HCA reference donor column (31 train donors)
+  celltype_label: labels        # HCA reference cell-type column (23 types)
+  residual:
+    epochs: 60
+    n_top_markers: 30
+    lr: 0.001
+    full_mask: false
+  prophead:
+    epochs: 120
+    k_pseudobulks: 200
+    noise_std: 0.2
+
+runtime:
+  seed: 18
+  device: cuda
+
+output:
+  output_dir: work/hca/predict
+  generated_h5ad: generated_data.h5ad
+  generated_metadata: generated_metadata.csv

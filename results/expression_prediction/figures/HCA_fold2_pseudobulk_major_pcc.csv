@@ -1,0 +1,26 @@
+CellType,Value,Method
+Stromal cells and fibroblast,0.956094298733818,BayesPrism
+Myeloid cells,0.950299905115189,BayesPrism
+Lymphoid cells,0.940676427324814,BayesPrism
+Alveolar epithelial cells,0.96288912358912,BayesPrism
+Endothelial cells,0.972376759062715,BayesPrism
+Stromal cells and fibroblast,0.711730394552281,DISSECT
+Myeloid cells,0.692836152102602,DISSECT
+Lymphoid cells,0.719601460125051,DISSECT
+Alveolar epithelial cells,0.701098124788451,DISSECT
+Endothelial cells,0.748169193252932,DISSECT
+Stromal cells and fibroblast,0.412228704611877,TAPE
+Myeloid cells,0.530901043286839,TAPE
+Lymphoid cells,0.638029760085183,TAPE
+Alveolar epithelial cells,0.507873915224044,TAPE
+Endothelial cells,0.621373643339393,TAPE
+Stromal cells and fibroblast,0.939388143507053,DeconvSC
+Myeloid cells,0.972210000580663,DeconvSC
+Lymphoid cells,0.910708478730461,DeconvSC
+Alveolar epithelial cells,0.938260524195137,DeconvSC
+Endothelial cells,0.953227750999434,DeconvSC
+Stromal cells and fibroblast,0.679769233222263,CIBERSORTx
+Myeloid cells,0.626364579202527,CIBERSORTx
+Lymphoid cells,0.611661419981437,CIBERSORTx
+Alveolar epithelial cells,0.691396735143707,CIBERSORTx
+Endothelial cells,0.684377757745079,CIBERSORTx

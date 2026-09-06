@@ -1,0 +1,40 @@
+input:
+  generated_h5ad: work/gse141115/predict/generated_data.h5ad
+  # Held-out single-cell test reference (RAW counts). The evaluation builds (sample,cell_type)
+  # pseudobulks from BOTH generated and real cells and correlates them axis-by-axis.
+  real_sc_path: processed_data/real_data/mouse_kidney/test_data.h5ad
+  other_generated_h5ad: null
+
+annotation:
+  real_celltype_key: "cell type"
+  real_sample_key: "sample"
+  generated_celltype_key: "Cell_type"
+  generated_sample_key: "Sample"
+  # The GT single-cell donors are labelled LD01/LD02/LD03, but the generated cells (and the bulk
+  # samples) use LDK1..LDK6. Align them so the (sample,cell_type) pseudobulk indices overlap.
+  # Set to null to auto-align by trailing integer (LD01->LDK1, ...).
+  gt_sample_map: {LD01: LDK1, LD02: LDK2, LD03: LDK3}
+
+evaluation:
+  real_is_raw: true            # GT test h5ad is raw counts (de-log not needed)
+  sample_level: true           # GSE141115 has per-sample structure
+  marker_top_n: 30             # wilcoxon markers/celltype for the marker-gene PCC axis
+  heatmap_top_n: 5             # t-test markers/celltype for the comparison heatmap
+  umap_per_sample: 90          # cells subsampled per sample for the UMAP embedding
+  umap_sample_limit: 28        # samples shown on the sample-mixing UMAP
+  make_umap: true
+  make_heatmap: true
+  emf: true                    # also emit Arial-relabelled .emf (via inkscape) next to png/pdf/svg
+  # (legacy attention / co-expression analyses only)
+  normalize_real_sc: true
+  target_sum: 10000
+  log1p: true
+  n_top_genes_network: 500
+  n_top_genes_attention: 1000
+
+runtime:
+  seed: 18
+  device: cpu
+
+output:
+  output_dir: work/gse141115/evaluate

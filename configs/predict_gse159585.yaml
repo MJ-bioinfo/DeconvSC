@@ -1,0 +1,39 @@
+input:
+  processed_dir: work/gse159585/preprocess
+  metadata_file: sc_metadata.pkl
+  bulk_path: processed_data/real_data/human_lung/bulk_counts.txt
+  checkpoint: model_weights/GSE159585/benchmark_reference/scvae_best.pth
+  prior: model_weights/GSE159585/benchmark_reference/cell_type_mu_logvar_best.pt
+samples:
+  target_samples: [GC1003222, GC1003224, GC1003227, GC1003228, GC1003231, GC1003232, GC1003233]
+model:
+  hidden_size_list: [4096, 2048, 1024]
+  mid_hidden_size: 256
+  embedding_dim: 32
+  nhead: 4
+  num_layers: 4
+  ff_dim: 64
+inference:
+  cells_per_celltype: 500
+# DeconvSC generation: prior-anchored expression + prophead proportions.
+generation:
+  alpha: 1.0
+  sc_ref_path: processed_data/real_data/human_lung/train_data.h5ad
+  donor_col: "Sample ID"
+  celltype_label: "cell type"
+  residual:
+    epochs: 60
+    n_top_markers: 30
+    lr: 0.001
+    full_mask: false
+  prophead:
+    epochs: 120
+    k_pseudobulks: 200
+    noise_std: 0.2
+runtime:
+  seed: 18
+  device: cuda
+output:
+  output_dir: work/gse159585/predict
+  generated_h5ad: generated_data.h5ad
+  generated_metadata: generated_metadata.csv

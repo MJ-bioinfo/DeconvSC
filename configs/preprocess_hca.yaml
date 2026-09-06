@@ -1,0 +1,12 @@
+input:
+  sc_path: processed_data/simulation_data/HCA/reference.h5ad
+  bulk_path: processed_data/simulation_data/HCA/bulk_synthetic.txt
+  celltype_label: "labels"
+  sep: "\t"
+
+output:
+  output_dir: work/hca/preprocess
+
+runtime:
+  seed: 18
+  device: cpu

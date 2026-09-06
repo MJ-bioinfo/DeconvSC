@@ -1,0 +1,8 @@
+item,deconvsc_evidence,basevae_evidence,status,implication
+exact_training_code,DeconvSC training script exists,No exact GSE141115 BaseVAE training script/config found beside output,UNVERIFIED,Model comparison allowed; attention-only attribution not allowed
+train_test_split,Not embedded in h5ad,Not embedded in h5ad,UNVERIFIED,Cannot prove identical training split from output files
+losses_and_weights,Training script includes reconstruction/KL/correlation losses,Exact BaseVAE losses/weights unavailable,UNVERIFIED,Correlation loss and other differences cannot be excluded
+latent_and_capacity,Architecture visible in DeconvSC script,BaseVAE architecture metadata unavailable,UNVERIFIED,Capacity matching cannot be verified
+generation_cell_count,"9,934 cells across LDK1-6","19,936 cells across LDK1-6",NOT_EQUIVALENT,Analysis must match cells by donor/type
+gene_output_dimension,"16,801 genes","16,792 genes",NOT_EQUIVALENT,Use fixed four-way common gene intersection
+native_output_scale,"Decoder log output; median expm1 library is not 10,000","Decoder log output; median expm1 library is not 10,000",NOT_CP10K,Primary analysis re-normalizes expm1 values per cell; native scale retained as S7

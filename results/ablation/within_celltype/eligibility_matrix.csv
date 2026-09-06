@@ -1,0 +1,9 @@
+method,native_output,within_celltype_eligible,role
+GT,single cells,True,reference
+DeconvSC Figure3,single cells,True,primary
+BaseVAE,single cells,True,model comparator
+DeconvSC current,single cells,True,sensitivity
+DISSECT,sample x cell-type profiles,False,global only
+BayesPrism,sample x cell-type profiles,False,global only
+TAPE,sample x cell-type profiles,False,global only
+CIBERSORTx,sample x major-lineage profiles,False,global major only

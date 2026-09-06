@@ -1,0 +1,38 @@
+Release environment recorded: 2026-08-09 (Asia/Shanghai)
+
+Operating system
+  Linux 5.14.0-570.39.1.el9_6.x86_64, glibc 2.34
+
+Python
+  Python 3.10.0
+  PyTorch 2.9.0+cu128
+  CUDA runtime reported by PyTorch: 12.8
+  cuDNN: 9.10.2
+  anndata 0.11.3
+  scanpy 1.11.0
+  numpy 2.1.3
+  pandas 2.2.3
+  scipy 1.15.1
+  scikit-learn 1.5.2
+  matplotlib 3.10.0
+  seaborn 0.13.2
+  PyYAML 6.0.2
+  h5py 3.12.1
+  umap-learn 0.5.7
+  statsmodels 0.14.4
+  numba 0.61.0
+  tqdm 4.67.1
+  networkx 3.4.2
+  swanlab 0.5.5
+
+R
+  R 4.4.3 (2025-02-28)
+  Bioconductor release used for core packages: 3.20
+  Exact package versions are listed in R_packages.txt.
+
+Notes
+  - GPU indices are not fixed in the release configs; select a visible device with CUDA_VISIBLE_DEVICES.
+  - The Python environment is sufficient for preprocessing, model training, inference,
+    expression evaluation, Figure 4 and Supplementary Figure 5.
+  - The R environment is additionally required for CellChat, ssGSEA/GSVA and Monocle2.
+  - Inkscape and Ghostscript are optional and are used only for EMF/PDF post-processing.

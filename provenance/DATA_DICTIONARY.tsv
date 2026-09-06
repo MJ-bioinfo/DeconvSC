@@ -1,0 +1,23 @@
+path	format	content	role
+processed_data/real_data/mouse_kidney/train_data.h5ad	H5AD	GSE141115 training reference	model input
+processed_data/real_data/mouse_kidney/train_data_canonical20.h5ad	H5AD	GSE141115 20-class training reference	locked-checkpoint compatible input
+processed_data/real_data/mouse_kidney/test_data.h5ad	H5AD	GSE141115 held-out real cells	evaluation ground truth
+processed_data/real_data/mouse_kidney/bulk_counts.txt	TSV	GSE141115 bulk count matrix	prediction input
+processed_data/real_data/human_lung/train_data.h5ad	H5AD	GSE159585 reference cells	model input
+processed_data/real_data/human_lung/test_data.h5ad	H5AD	GSE159585 held-out cells	evaluation ground truth
+processed_data/real_data/human_lung/bulk_counts.txt	TSV	GSE159585 bulk count matrix	prediction input
+processed_data/real_data/human_iMGL/train_data.h5ad	H5AD	GSE226077 iMGL reference cells	downstream model input
+processed_data/real_data/human_iMGL/bulk_tpm.csv	CSV	GSE226077 bulk TPM matrix	downstream prediction input
+processed_data/simulation_data/HCA/reference.h5ad	H5AD	HCA simulation training reference	model input
+processed_data/simulation_data/HCA/gt_validation.h5ad	H5AD	HCA held-out validation cells	evaluation ground truth
+processed_data/simulation_data/HCA/bulk_synthetic.txt	TSV	HCA simulated bulk profiles	prediction input
+model_weights	PTH/PT	CVAE state dictionaries and cell-type prior tensors	locked inference inputs
+model_outputs	H5AD	locked generated single-cell-resolution expression matrices	manuscript analysis inputs
+metadata	CSV/JSON	cell-type label maps, prediction genes and generated-cell metadata	annotation/provenance
+benchmark_tables/expression_prediction/03_result_tables	CSV/XLSX/NPZ/TSV	prophead method-specific Pearson tables, proportion tables and cached unified estimates	Figures 2-3/Supplementary Figure 3
+benchmark_tables/expression_prediction/figure4_support	CSV.GZ	verified GSE141115 predicted pseudobulk profile used only by the Figure 4 provenance check	Figure 4 validation
+results/expression_prediction/figures	CSV/PNG/PDF/SVG/EMF	frozen prophead benchmark source tables and figures	Figures 2-3/Supplementary Figure 3
+results/ablation/within_celltype	CSV/JSON/NPZ	within-cell-type topology metrics and audits	Figure 4a-d
+results/supplementary_figure5	CSV/NPZ/JSON	mean/variance, HVG and co-expression results	Supplementary Figure 5
+results/downstream/GSE159585	CSV/RDS/PNG/PDF/SVG	CellChat and ssGSEA/GSVA objects/results	Figure 5
+results/downstream/GSE226077	CSV/RDS/H5AD/PNG/PDF/SVG	Monocle2, ssGSEA/GSVA and UMAP results	Figure 6

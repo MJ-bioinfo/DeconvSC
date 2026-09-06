@@ -1,0 +1,9 @@
+figure	analysis	primary_source_data	code_entry	locked_output_role
+Figure 2	expression benchmark	benchmark_tables/expression_prediction/03_result_tables	code/03_model_evaluation/expression_benchmark/plot_pcc_per_dataset.R	prophead HCA expression-benchmark tables
+Figure 3	expression benchmark	benchmark_tables/expression_prediction/03_result_tables	code/03_model_evaluation/expression_benchmark/plot_pcc_per_dataset.R	prophead GSE141115 and GSE159585 expression-benchmark tables
+Supplementary Figure 3	expression benchmark stratification	benchmark_tables/expression_prediction/03_result_tables	code/03_model_evaluation/expression_benchmark/plot_pcc_per_dataset.R	fine- and major-cell-type tables
+Figure 4a-d	within-cell-type ablation	results/ablation/within_celltype/figure4_inputs	code/04_ablation/within_celltype/scripts/plot_figure4_within_celltype.py	DeconvSC versus attention-ablated VAE
+Figure 4e	alpha sweep	results/ablation/alpha_sweep/result_gse141115.csv	results/ablation/alpha_sweep/panel_e_alpha_ablation.svg	alpha 0, 0.5 and 1 source values
+Supplementary Figure 5	normalized expression and co-expression	results/supplementary_figure5/data	code/03_model_evaluation/supplementary_figure5/build_supplementary_figure5.py	corrected GSE141115 analysis
+Figure 5	COVID-19 lung downstream application	results/downstream/GSE159585	code/05_downstream	CellChat and ssGSEA/GSVA source objects
+Figure 6	iMGL downstream application	results/downstream/GSE226077	code/05_downstream	Monocle2, ssGSEA/GSVA, UMAP and marker source objects

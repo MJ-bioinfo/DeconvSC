@@ -1,0 +1,25 @@
+input:
+  processed_dir: work/gse141115/preprocess
+  metadata_file: sc_metadata.pkl
+
+model:
+  hidden_size_list: [4096, 2048, 1024]
+  mid_hidden_size: 256
+  embedding_dim: 32
+  nhead: 4
+  num_layers: 4
+  ff_dim: 64
+
+training:
+  epochs: 50
+  batch_size: 512
+  learning_rate: 0.00005
+
+runtime:
+  seed: 18
+  device: cuda
+
+output:
+  output_dir: work/gse141115/train
+  checkpoint_name: scvae_best.pth
+  prior_name: cell_type_mu_logvar_best.pt

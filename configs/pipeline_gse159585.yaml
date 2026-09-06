@@ -1,0 +1,13 @@
+# DeconvSC full pipeline (preprocess -> train -> predict[prior-anchored] -> evaluate)
+steps:
+  preprocess: true
+  # Uses the locked checkpoint in model_weights/ by default.
+  train: false
+  predict: true
+  evaluate: true
+
+configs:
+  preprocess: configs/preprocess_gse159585.yaml
+  train: configs/train_gse159585.yaml
+  predict: configs/predict_gse159585.yaml
+  evaluate: configs/evaluate_gse159585.yaml

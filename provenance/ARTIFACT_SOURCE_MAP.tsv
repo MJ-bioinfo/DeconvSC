@@ -1,0 +1,23 @@
+release_path	original_source	role
+model_outputs/GSE141115/prophead_generated.h5ad	deconv_20260610/prophead/GSE141115/generated_data.h5ad	main prophead GSE141115 output
+model_outputs/GSE141115/figure4_suppfigure5_deconvsc_generated.h5ad	cVAE/GSE141115/attention_geneembed/generated_data.h5ad	locked DeconvSC input for Figure 4 and Supplementary Figure 5
+model_outputs/GSE141115/figure4_ablated_vae_generated.h5ad	cVAE/GSE141115/ablation_basevae/BaseVAE-generated_data.h5ad	locked ablated-VAE input for Figure 4
+model_outputs/GSE159585/prophead_generated.h5ad	deconv_20260610/prophead/GSE159585/generated_data.h5ad	main prophead GSE159585 benchmark output
+model_outputs/GSE159585/covid_application_generated.h5ad	deconv_20260610/prophead/downstream/covid/generated_data_covid.h5ad	COVID-19 downstream output
+model_outputs/GSE159585/normal_application_generated.h5ad	deconv_20260610/prophead/downstream/normal_18_24/generated_data_normal_18_24.h5ad	normal-lung downstream output
+model_outputs/HCA/prophead_generated.h5ad	deconv_20260610/prophead/HCA/generated_data.h5ad	main prophead HCA fold-2 output
+model_outputs/GSE226077/prophead_generated.h5ad	deconv_20260610/prophead/GSE226077/generated_data.h5ad	iMGL downstream output
+benchmark_tables/expression_prediction/03_result_tables	deconv_20260610/prophead/03_result_tables	frozen prophead benchmark tables
+results/expression_prediction/figures	deconv_20260610/prophead/03_result_figures/figures	frozen prophead benchmark figures
+results/ablation/within_celltype/figures/Figure4_within_celltype_ABCD.*	deconv_20260610/prophead/GSE141115/topology_extended_benchmark/within_celltype/figures/Figure4_within_celltype_ABCD.*	authoritative current Figure 4a-d; boxplots plus unconnected cell-type points
+results/ablation/within_celltype	deconv_20260610/prophead/GSE141115/topology_extended_benchmark/within_celltype	current within-cell-type topology tables and audits
+results/supplementary_figure5	deconv_20260610/prophead/GSE141115/supplementary_figure5_corrected	corrected Supplementary Figure 5 analysis
+results/downstream/GSE159585	deconv_20260610/prophead/downstream	CellChat and ssGSEA/GSVA results
+results/downstream/GSE226077	deconv_20260610/prophead/GSE226077	iMGL Monocle2 and ssGSEA/GSVA results
+model_weights/GSE141115/deconvsc	cVAE/GSE141115/attention_geneembed	GSE141115 attention-CVAE checkpoint and priors
+model_weights/GSE159585/benchmark_reference	cVAE/GSE159585/geneembed	GSE159585 main benchmark checkpoint and priors
+model_weights/GSE159585/covid_application	cVAE/GSE159585/covid	COVID-specific checkpoint, priors and gene metadata
+model_weights/GSE159585/normal_application	cVAE/GSE159585/combined_geneembed	normal-lung application checkpoint and priors
+model_weights/HCA/fold2	cVAE/Simulation_HCA/result/HCA/v3_pureprior/fold_2	HCA fold-2 checkpoint and priors
+model_weights/GSE226077/application	data/GSE226077/result/gse226077_embed16_head2_layer2/allday/application	iMGL checkpoint, priors and gene metadata
+provenance/source_snapshot_deconv_20260610	deconv_20260610/{01_data_processing,02_training,03_inference,04_evaluation,05_downstream,lib}	unaltered workstation source snapshot for audit only

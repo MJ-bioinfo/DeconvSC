@@ -1,0 +1,61 @@
+check,passed,observed,expected
+all_required_files_exist,True,none,none missing
+all_required_files_nonempty,True,none,none empty
+run_completed,True,completed,completed
+common_gene_count,True,16791,16791
+inferential_unit,True,cell_type,cell_type
+figure3_provenance_passed,True,3.406649990544963e-06,<1e-5
+figure3_provenance_profiles,True,48,48
+input_hashes_unchanged,True,none,none
+generated_cp10k_transform,True,"[9999.999998367695, 9999.999984309865, 10000.00000319984]",all within 0.01 of 10000
+native_scale_assumption_falsified,True,"{'DeconvSC': 2040.767154877476, 'BaseVAE': 2751.53535999842, 'DeconvSC_current': 2164.3391973245016}",all generated native libraries <5000
+attention_attribution_limited,True,"['NOT_CP10K', 'NOT_EQUIVALENT', 'UNVERIFIED']",contains unverified/not-equivalent status
+scale_protocol_deviation_recorded,True,1,one transparent scale record
+panel_d_post_result_revision_recorded,True,1,one transparent Figure 4d record
+method_eligibility,True,"['BaseVAE', 'DeconvSC Figure3', 'DeconvSC current', 'GT']",four single-cell sources
+primary_cell_types_locked,True,"['CD_PC', 'CNT', 'DCT', 'MC', 'PT', 'aLOH']","['CD_PC', 'CNT', 'DCT', 'MC', 'PT', 'aLOH']"
+primary_three_valid_donors,True,"[3, 3, 3, 3, 3, 3]",all 3
+threshold50_type_count,True,10,10
+threshold200_type_count,True,4,4
+celltype_panels_have_500_genes,True,"{'CD_IC': 500, 'CD_PC': 500, 'CNT': 500, 'DCT': 500, 'Endo': 500, 'Fib': 500, 'MC': 500, 'PT': 500, 'Podo': 500, 'aLOH': 500}",500 each
+modules_gt_defined_nonempty,True,"n=155, min=6",nonempty; size>=6
+primary_ten_seeds_per_pair,True,"{('CD_PC', 'BaseVAE'): 10, ('CD_PC', 'DeconvSC'): 10, ('CNT', 'BaseVAE'): 10, ('CNT', 'DeconvSC'): 10, ('DCT', 'BaseVAE'): 10, ('DCT', 'DeconvSC'): 10, ('MC', 'BaseVAE'): 10, ('MC', 'DeconvSC'): 10, ('PT', 'BaseVAE'): 10, ('PT', 'DeconvSC'): 10, ('aLOH', 'BaseVAE'): 10, ('aLOH', 'DeconvSC'): 10}",10 each
+primary_methods_only,True,"['BaseVAE', 'DeconvSC']",DeconvSC;BaseVAE
+primary_metrics_finite,True,1080,1080
+primary_cell_rows,True,12,12
+no_aggregate_methods_in_metrics,True,"['BaseVAE', 'DeconvSC']",only DeconvSC/BaseVAE
+primary_test_celltype_n,True,6,6
+primary_all_celltypes_favor_deconv,True,1.0,1.0
+primary_exact_one_sided_p,True,0.015625,0.015625
+primary_two_sided_p,True,0.03125,0.03125
+primary_effect_ci_positive,True,0.0158964783551134,>0
+module_scale_sensitivities_agree,True,"[{'metric': 'module_rmse_mean', 'deconvsc_win_fraction': 1.0, 'p_one_sided': 0.015625}, {'metric': 'module_edge_mae_mean', 'deconvsc_win_fraction': 1.0, 'p_one_sided': 0.015625}]",both 6/6 and p=0.015625
+figure4_holm_family_complete,True,4,4
+holm_not_overclaimed,True,"[0.0625, 0.0625, 0.0625, 0.0625]",all >=0.05
+per_gene_edge_mae_all_celltypes_favor_deconv,True,1.0,1.0
+mi_rank_sensitivity_agrees,True,1.0,1.0
+sensitivity_settings_complete,True,"['LODO_without_LDK1', 'LODO_without_LDK2', 'LODO_without_LDK3', 'P0_primary', 'S1_current', 'S2a_threshold50', 'S2b_threshold200', 'S3_no_donor_centering', 'S4_shared_global_panel', 'S5_legacy_ward', 'S6_donor_fisher', 'S7_native_decoder_scale']","['LODO_without_LDK1', 'LODO_without_LDK2', 'LODO_without_LDK3', 'P0_primary', 'S1_current', 'S2a_threshold50', 'S2b_threshold200', 'S3_no_donor_centering', 'S4_shared_global_panel', 'S5_legacy_ward', 'S6_donor_fisher', 'S7_native_decoder_scale']"
+all_module_sensitivities_directionally_agree,True,"{'P0_primary': 1.0, 'S1_current': 1.0, 'S2a_threshold50': 1.0, 'S2b_threshold200': 1.0, 'S3_no_donor_centering': 1.0, 'S4_shared_global_panel': 1.0, 'S5_legacy_ward': 1.0, 'S6_donor_fisher': 1.0, 'S7_native_decoder_scale': 1.0, 'LODO_without_LDK1': 1.0, 'LODO_without_LDK2': 1.0, 'LODO_without_LDK3': 1.0}",all 1.0
+leave_one_donor_out_complete,True,3,3 stable runs
+native_scale_sensitivity_present,True,"['LODO_without_LDK1', 'LODO_without_LDK2', 'LODO_without_LDK3', 'P0_primary', 'S1_current', 'S2a_threshold50', 'S2b_threshold200', 'S3_no_donor_centering', 'S4_shared_global_panel', 'S5_legacy_ward', 'S6_donor_fisher', 'S7_native_decoder_scale']",contains S7
+legacy_bridge_exact,True,5/5,5/5
+legacy_bridge_scope,True,"kept=11, n=50","kept=11, module×seed=50"
+deterministic_reproduction,True,21/21,21/21
+reproduction_numeric_exact,True,0.0,0.0
+figure4_long_rows,True,72,6 types × 2 methods × 6 metrics = 72
+figure4_edge_mae_present,True,"['coexpression_edge_mae', 'hub_jaccard', 'mi_fidelity_error', 'module_l2', 'network_fidelity', 'network_pcc']",contains coexpression_edge_mae
+figure4_unit_celltype,True,['cell_type'],cell_type
+figure4_methods,True,"['BaseVAE', 'Route2']",Route2;BaseVAE
+figure4_no_dissect,True,"['BaseVAE', 'Route2']",DISSECT absent
+figure4_panel_c_keys,True,"['BaseVAE', 'Route2', 'cell_types', 'p', 'p_two_sided', 'unit', 'value_definition']","['BaseVAE', 'Route2', 'cell_types', 'p', 'p_two_sided', 'unit', 'value_definition']"
+figure4_panel_c_n,True,"(6, 6)","(6, 6)"
+figure4_panel_c_p_matches,True,0.015625,0.015625
+figure4_panel_c_values_match,True,"max_diff=8.674e-17; order=['CD_PC', 'CNT', 'DCT', 'MC', 'PT', 'aLOH']",cross-format max diff <1e-15 and identical order
+figure4_abcd_panels_complete,True,"[{'panel': 'a', 'n_cell_types': 6, 'density_layer_displayed': False, 'boxplot_displayed': True, 'paired_points_displayed': True, 'paired_lines_displayed': True}, {'panel': 'b', 'n_cell_types': 6, 'density_layer_displayed': False, 'boxplot_displayed': True, 'paired_points_displayed': True, 'paired_lines_displayed': True}, {'panel': 'c', 'n_cell_types': 6, 'density_layer_displayed': False, 'boxplot_displayed': True, 'paired_points_displayed': True, 'paired_lines_displayed': True}, {'panel': 'd', 'n_cell_types': 6, 'density_layer_displayed': False, 'boxplot_displayed': True, 'paired_points_displayed': True, 'paired_lines_displayed': True}]",a-d; n=6 each; box+points+paired lines; no density layer
+figure4_abcd_values_match_source,True,max cross-table tolerance checked,all means differ <1e-15
+figure4_panel_d_is_edge_mae,True,['coexpression_edge_mae'],coexpression_edge_mae
+figure4_abcd_no_stat_annotations,True,"{'audit_all_false': True, 'forbidden_svg_labels': []}","all panels false; no bracket-test text (P, ns, or stars) in combined SVG"
+figure4_abcd_arial_vector_text,True,Arial,editable Arial text
+report_claim_boundary,True,present,attention and GRN boundaries present
+figure4_caption_edge_mae_and_complementarity,True,present,edge MAE definition and complementary roles present
+fallacy_scan_11_of_11,True,11/11,11/11

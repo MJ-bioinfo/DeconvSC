@@ -1,0 +1,220 @@
+{
+  "analysis": "GSE141115 within-cell-type expression topology",
+  "samples": [
+    "LDK1",
+    "LDK2",
+    "LDK3"
+  ],
+  "seeds": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033
+  ],
+  "topology_genes": 500,
+  "mi_genes": 200,
+  "n_hubs": 50,
+  "neighbors_per_hub": 20,
+  "candidate_modules": 20,
+  "top_modules": 10,
+  "minimum_module_size": 6,
+  "minimum_cells_per_donor_method": 20,
+  "cap_cells_per_donor_method": 200,
+  "primary_cell_types": [
+    "CD_PC",
+    "CNT",
+    "DCT",
+    "MC",
+    "PT",
+    "aLOH"
+  ],
+  "common_gene_count": 16791,
+  "settings": [
+    {
+      "setting": "P0_primary",
+      "deconv": "DeconvSC",
+      "threshold": 100,
+      "donors": [
+        "LDK1",
+        "LDK2",
+        "LDK3"
+      ],
+      "corr_mode": "pooled_centered",
+      "panel": "celltype",
+      "linkage": "average",
+      "expression_scale": "cellwise_log1p_cp10k",
+      "full_metrics": true
+    },
+    {
+      "setting": "S1_current",
+      "deconv": "DeconvSC_current",
+      "threshold": 100,
+      "donors": [
+        "LDK1",
+        "LDK2",
+        "LDK3"
+      ],
+      "corr_mode": "pooled_centered",
+      "panel": "celltype",
+      "linkage": "average",
+      "expression_scale": "cellwise_log1p_cp10k",
+      "full_metrics": true
+    },
+    {
+      "setting": "S2a_threshold50",
+      "deconv": "DeconvSC",
+      "threshold": 50,
+      "donors": [
+        "LDK1",
+        "LDK2",
+        "LDK3"
+      ],
+      "corr_mode": "pooled_centered",
+      "panel": "celltype",
+      "linkage": "average",
+      "expression_scale": "cellwise_log1p_cp10k",
+      "full_metrics": false
+    },
+    {
+      "setting": "S2b_threshold200",
+      "deconv": "DeconvSC",
+      "threshold": 200,
+      "donors": [
+        "LDK1",
+        "LDK2",
+        "LDK3"
+      ],
+      "corr_mode": "pooled_centered",
+      "panel": "celltype",
+      "linkage": "average",
+      "expression_scale": "cellwise_log1p_cp10k",
+      "full_metrics": false
+    },
+    {
+      "setting": "S3_no_donor_centering",
+      "deconv": "DeconvSC",
+      "threshold": 100,
+      "donors": [
+        "LDK1",
+        "LDK2",
+        "LDK3"
+      ],
+      "corr_mode": "pooled_uncentered",
+      "panel": "celltype",
+      "linkage": "average",
+      "expression_scale": "cellwise_log1p_cp10k",
+      "full_metrics": false
+    },
+    {
+      "setting": "S4_shared_global_panel",
+      "deconv": "DeconvSC",
+      "threshold": 100,
+      "donors": [
+        "LDK1",
+        "LDK2",
+        "LDK3"
+      ],
+      "corr_mode": "pooled_centered",
+      "panel": "shared",
+      "linkage": "average",
+      "expression_scale": "cellwise_log1p_cp10k",
+      "full_metrics": false
+    },
+    {
+      "setting": "S5_legacy_ward",
+      "deconv": "DeconvSC",
+      "threshold": 100,
+      "donors": [
+        "LDK1",
+        "LDK2",
+        "LDK3"
+      ],
+      "corr_mode": "pooled_centered",
+      "panel": "celltype",
+      "linkage": "ward",
+      "expression_scale": "cellwise_log1p_cp10k",
+      "full_metrics": false
+    },
+    {
+      "setting": "S6_donor_fisher",
+      "deconv": "DeconvSC",
+      "threshold": 100,
+      "donors": [
+        "LDK1",
+        "LDK2",
+        "LDK3"
+      ],
+      "corr_mode": "fisher",
+      "panel": "celltype",
+      "linkage": "average",
+      "expression_scale": "cellwise_log1p_cp10k",
+      "full_metrics": false
+    },
+    {
+      "setting": "S7_native_decoder_scale",
+      "deconv": "DeconvSC",
+      "threshold": 100,
+      "donors": [
+        "LDK1",
+        "LDK2",
+        "LDK3"
+      ],
+      "corr_mode": "pooled_centered",
+      "panel": "celltype",
+      "linkage": "average",
+      "expression_scale": "native_decoder_log",
+      "full_metrics": true
+    },
+    {
+      "setting": "LODO_without_LDK1",
+      "deconv": "DeconvSC",
+      "threshold": 100,
+      "donors": [
+        "LDK2",
+        "LDK3"
+      ],
+      "corr_mode": "pooled_centered",
+      "panel": "celltype",
+      "linkage": "average",
+      "expression_scale": "cellwise_log1p_cp10k",
+      "full_metrics": false
+    },
+    {
+      "setting": "LODO_without_LDK2",
+      "deconv": "DeconvSC",
+      "threshold": 100,
+      "donors": [
+        "LDK1",
+        "LDK3"
+      ],
+      "corr_mode": "pooled_centered",
+      "panel": "celltype",
+      "linkage": "average",
+      "expression_scale": "cellwise_log1p_cp10k",
+      "full_metrics": false
+    },
+    {
+      "setting": "LODO_without_LDK3",
+      "deconv": "DeconvSC",
+      "threshold": 100,
+      "donors": [
+        "LDK1",
+        "LDK2"
+      ],
+      "corr_mode": "pooled_centered",
+      "panel": "celltype",
+      "linkage": "average",
+      "expression_scale": "cellwise_log1p_cp10k",
+      "full_metrics": false
+    }
+  ],
+  "inferential_unit": "cell_type",
+  "claim_boundary": "expression co-expression/dependency topology; not causal GRN",
+  "scale_protocol_amendment": "Gate 0 showed generated native decoder log outputs do not conserve CP10K libraries; P0 therefore applies expm1 -> cellwise CP10K -> log1p, with native values retained as S7."
+}

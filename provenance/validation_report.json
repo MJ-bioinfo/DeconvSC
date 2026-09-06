@@ -1,0 +1,399 @@
+{
+  "release_root": "/disk1/maijl/deconv/papercode2",
+  "n_checks": 78,
+  "n_passed": 78,
+  "n_failed": 0,
+  "passed": true,
+  "checks": [
+    {
+      "check": "required:README.md",
+      "passed": true,
+      "detail": "exists=True; size=17626"
+    },
+    {
+      "check": "required:VERSION",
+      "passed": true,
+      "detail": "exists=True; size=6"
+    },
+    {
+      "check": "required:CITATION.cff",
+      "passed": true,
+      "detail": "exists=True; size=587"
+    },
+    {
+      "check": "required:LICENSE.txt",
+      "passed": true,
+      "detail": "exists=True; size=573"
+    },
+    {
+      "check": "required:environment/conda_environment.yml",
+      "passed": true,
+      "detail": "exists=True; size=452"
+    },
+    {
+      "check": "required:environment/requirements.txt",
+      "passed": true,
+      "detail": "exists=True; size=263"
+    },
+    {
+      "check": "required:environment/session_info.txt",
+      "passed": true,
+      "detail": "exists=True; size=1065"
+    },
+    {
+      "check": "required:processed_data/real_data/mouse_kidney/train_data_canonical20.h5ad",
+      "passed": true,
+      "detail": "exists=True; size=344506424"
+    },
+    {
+      "check": "required:processed_data/real_data/mouse_kidney/test_data.h5ad",
+      "passed": true,
+      "detail": "exists=True; size=159406372"
+    },
+    {
+      "check": "required:processed_data/real_data/human_lung/train_data.h5ad",
+      "passed": true,
+      "detail": "exists=True; size=1047227206"
+    },
+    {
+      "check": "required:processed_data/simulation_data/HCA/reference.h5ad",
+      "passed": true,
+      "detail": "exists=True; size=362622904"
+    },
+    {
+      "check": "required:model_weights/GSE141115/deconvsc/scvae_best.pth",
+      "passed": true,
+      "detail": "exists=True; size=436650495"
+    },
+    {
+      "check": "required:model_weights/GSE141115/deconvsc/cell_type_mu_logvar_best.pt",
+      "passed": true,
+      "detail": "exists=True; size=53241"
+    },
+    {
+      "check": "required:model_outputs/GSE141115/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "exists=True; size=152870249"
+    },
+    {
+      "check": "required:model_outputs/GSE141115/figure4_suppfigure5_deconvsc_generated.h5ad",
+      "passed": true,
+      "detail": "exists=True; size=668794348"
+    },
+    {
+      "check": "required:model_outputs/GSE141115/figure4_ablated_vae_generated.h5ad",
+      "passed": true,
+      "detail": "exists=True; size=1340758632"
+    },
+    {
+      "check": "required:model_outputs/GSE159585/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "exists=True; size=355323467"
+    },
+    {
+      "check": "required:model_outputs/HCA/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "exists=True; size=710439171"
+    },
+    {
+      "check": "required:model_outputs/GSE226077/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "exists=True; size=151925786"
+    },
+    {
+      "check": "required:benchmark_tables/expression_prediction/03_result_tables/summary_all_methods.csv",
+      "passed": true,
+      "detail": "exists=True; size=19643"
+    },
+    {
+      "check": "required:benchmark_tables/expression_prediction/03_result_tables/benchmark_tables.xlsx",
+      "passed": true,
+      "detail": "exists=True; size=225985"
+    },
+    {
+      "check": "required:results/ablation/within_celltype/figure4_inputs/topology_metrics_long.csv",
+      "passed": true,
+      "detail": "exists=True; size=6823"
+    },
+    {
+      "check": "required:results/ablation/within_celltype/figure4_inputs/figure4d_pca50_symmetric_profile_pcc.csv",
+      "passed": true,
+      "detail": "exists=True; size=1572"
+    },
+    {
+      "check": "required:results/ablation/within_celltype/figures/Figure4_within_celltype_ABCD.png",
+      "passed": true,
+      "detail": "exists=True; size=656418"
+    },
+    {
+      "check": "required:results/ablation/within_celltype/figures/Figure4_within_celltype_ABCD.pdf",
+      "passed": true,
+      "detail": "exists=True; size=26052"
+    },
+    {
+      "check": "required:results/ablation/within_celltype/figures/Figure4_within_celltype_ABCD.svg",
+      "passed": true,
+      "detail": "exists=True; size=41707"
+    },
+    {
+      "check": "required:results/ablation/within_celltype/figures/Figure4_within_celltype_ABCD.emf",
+      "passed": true,
+      "detail": "exists=True; size=247684"
+    },
+    {
+      "check": "required:results/ablation/within_celltype/figures/Figure4_within_celltype_ABCD_plot_audit.csv",
+      "passed": true,
+      "detail": "exists=True; size=601"
+    },
+    {
+      "check": "required:results/supplementary_figure5/data/metric_summary.csv",
+      "passed": true,
+      "detail": "exists=True; size=1851"
+    },
+    {
+      "check": "required:results/downstream/GSE159585/cellchat/comparison_df.csv",
+      "passed": true,
+      "detail": "exists=True; size=3172"
+    },
+    {
+      "check": "required:results/downstream/GSE226077/BEAM_res.csv",
+      "passed": true,
+      "detail": "exists=True; size=1106174"
+    },
+    {
+      "check": "required:provenance/DATA_DICTIONARY.tsv",
+      "passed": true,
+      "detail": "exists=True; size=2559"
+    },
+    {
+      "check": "required:provenance/FIGURE_SOURCE_MAP.tsv",
+      "passed": true,
+      "detail": "exists=True; size=1531"
+    },
+    {
+      "check": "required:provenance/ARTIFACT_SOURCE_MAP.tsv",
+      "passed": true,
+      "detail": "exists=True; size=3167"
+    },
+    {
+      "check": "yaml:evaluate_gse141115.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:evaluate_gse159585.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:evaluate_hca.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:pipeline_gse141115.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:pipeline_gse159585.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:pipeline_hca.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:predict_gse141115.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:predict_gse159585.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:predict_hca.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:preprocess_gse141115.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:preprocess_gse159585.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:preprocess_hca.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:train_gse141115.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:train_gse159585.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "yaml:train_hca.yaml",
+      "passed": true,
+      "detail": "parsed"
+    },
+    {
+      "check": "portable_executable_paths",
+      "passed": true,
+      "detail": "no workstation-specific executable paths"
+    },
+    {
+      "check": "h5ad:processed_data/real_data/mouse_kidney/test_data.h5ad",
+      "passed": true,
+      "detail": "shape=(16947, 17328); expected=(16947, 17328); missing_obs=[]"
+    },
+    {
+      "check": "h5ad:model_outputs/GSE141115/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "shape=(9598, 16801); expected=(9598, 16801); missing_obs=[]"
+    },
+    {
+      "check": "h5ad:model_outputs/GSE141115/figure4_suppfigure5_deconvsc_generated.h5ad",
+      "passed": true,
+      "detail": "shape=(9934, 16801); expected=(9934, 16801); missing_obs=[]"
+    },
+    {
+      "check": "h5ad:model_outputs/GSE141115/figure4_ablated_vae_generated.h5ad",
+      "passed": true,
+      "detail": "shape=(19936, 16792); expected=(19936, 16792); missing_obs=[]"
+    },
+    {
+      "check": "h5ad:model_outputs/GSE159585/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "shape=(13986, 12220); expected=(13986, 12220); missing_obs=[]"
+    },
+    {
+      "check": "h5ad:model_outputs/HCA/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "shape=(20943, 25366); expected=(20943, 25366); missing_obs=[]"
+    },
+    {
+      "check": "h5ad:model_outputs/GSE226077/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "shape=(4800, 16129); expected=(4800, 16129); missing_obs=[]"
+    },
+    {
+      "check": "benchmark_methods",
+      "passed": true,
+      "detail": "rows=134; methods=['BayesPrism', 'CIBERSORTx', 'DISSECT', 'DeconvSC', 'TAPE']"
+    },
+    {
+      "check": "benchmark_datasets",
+      "passed": true,
+      "detail": "['GSE141115', 'GSE159585', 'HCA_fold2']"
+    },
+    {
+      "check": "figure4_methods",
+      "passed": true,
+      "detail": "['BaseVAE', 'Route2']"
+    },
+    {
+      "check": "figure4_cell_types",
+      "passed": true,
+      "detail": "['CD_PC', 'CNT', 'DCT', 'MC', 'PT', 'aLOH']"
+    },
+    {
+      "check": "figure4_current_display",
+      "passed": true,
+      "detail": "no_lines=True; no_density=True; no_stats=True"
+    },
+    {
+      "check": "figure4_no_superseded_violin",
+      "passed": true,
+      "detail": "none"
+    },
+    {
+      "check": "sha256:model_outputs/GSE141115/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "observed=cac25d4f0fd3a4e9df2a80e36f9182b40aaedd50d0d839bd0255b441eaa7694c; expected=cac25d4f0fd3a4e9df2a80e36f9182b40aaedd50d0d839bd0255b441eaa7694c"
+    },
+    {
+      "check": "sha256:model_outputs/GSE141115/figure4_suppfigure5_deconvsc_generated.h5ad",
+      "passed": true,
+      "detail": "observed=a78885bd8f53c1fbfee611f62844033f669af77bd245273e986d001a1817af41; expected=a78885bd8f53c1fbfee611f62844033f669af77bd245273e986d001a1817af41"
+    },
+    {
+      "check": "sha256:model_outputs/GSE141115/figure4_ablated_vae_generated.h5ad",
+      "passed": true,
+      "detail": "observed=78eb9a7b675195ade922f5bb122e8760ffebbca44ccd596d1dbddd45e6f08429; expected=78eb9a7b675195ade922f5bb122e8760ffebbca44ccd596d1dbddd45e6f08429"
+    },
+    {
+      "check": "sha256:model_outputs/GSE159585/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "observed=bd78d0ea785b64912ce48b911d0e4f78f7a1e07e9d21702ac3115ff355ea6d9f; expected=bd78d0ea785b64912ce48b911d0e4f78f7a1e07e9d21702ac3115ff355ea6d9f"
+    },
+    {
+      "check": "sha256:model_outputs/HCA/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "observed=617c28bc0e4fd52636905fde726d2e0ad175a53b292094ac79aaa6bf23c68f22; expected=617c28bc0e4fd52636905fde726d2e0ad175a53b292094ac79aaa6bf23c68f22"
+    },
+    {
+      "check": "sha256:model_outputs/GSE226077/prophead_generated.h5ad",
+      "passed": true,
+      "detail": "observed=fdf4f1708105c79d46c413025b07b3b55c450b096938517d3a85061e86313841; expected=fdf4f1708105c79d46c413025b07b3b55c450b096938517d3a85061e86313841"
+    },
+    {
+      "check": "sha256:model_weights/GSE141115/deconvsc/scvae_best.pth",
+      "passed": true,
+      "detail": "observed=296248e289267fb44aeddb49bf7a255c410d33babad28cffbbe6d040ea9d01c7; expected=296248e289267fb44aeddb49bf7a255c410d33babad28cffbbe6d040ea9d01c7"
+    },
+    {
+      "check": "sha256:model_weights/GSE159585/benchmark_reference/scvae_best.pth",
+      "passed": true,
+      "detail": "observed=0b2c50608194b49409fc931afef24afbfd62faf574fd8e227748b6f6d41836dc; expected=0b2c50608194b49409fc931afef24afbfd62faf574fd8e227748b6f6d41836dc"
+    },
+    {
+      "check": "sha256:model_weights/GSE159585/normal_application/scvae_best.pth",
+      "passed": true,
+      "detail": "observed=30e38f796630640a75dcf1d0e1f4dee4dd016b0a6a5b36dd0a3fc679794620ba; expected=30e38f796630640a75dcf1d0e1f4dee4dd016b0a6a5b36dd0a3fc679794620ba"
+    },
+    {
+      "check": "sha256:model_weights/GSE159585/covid_application/scvae_best.pth",
+      "passed": true,
+      "detail": "observed=5423e4f1af73d0da49d0a2c92c2b4d10d3431a7d8371369e74979cd64562fae4; expected=5423e4f1af73d0da49d0a2c92c2b4d10d3431a7d8371369e74979cd64562fae4"
+    },
+    {
+      "check": "sha256:model_weights/HCA/fold2/scvae_best.pth",
+      "passed": true,
+      "detail": "observed=6cf71c87c5ebfd4c88f39607224955ae3eb8b496b65d2a31763aaf392b5f1efe; expected=6cf71c87c5ebfd4c88f39607224955ae3eb8b496b65d2a31763aaf392b5f1efe"
+    },
+    {
+      "check": "sha256:model_weights/GSE226077/application/scvae_best.pth",
+      "passed": true,
+      "detail": "observed=581cc81e5af4c8b8bf0efec34962b0f58d60942ad258ea94e1e43b2257859f38; expected=581cc81e5af4c8b8bf0efec34962b0f58d60942ad258ea94e1e43b2257859f38"
+    },
+    {
+      "check": "sha256:results/ablation/within_celltype/figures/Figure4_within_celltype_ABCD.png",
+      "passed": true,
+      "detail": "observed=d4f0d271086d8796e4953e03a414d2b1b401baf135840dce98d51c2438d34467; expected=d4f0d271086d8796e4953e03a414d2b1b401baf135840dce98d51c2438d34467"
+    },
+    {
+      "check": "sha256:results/ablation/within_celltype/figures/Figure4_within_celltype_ABCD.pdf",
+      "passed": true,
+      "detail": "observed=3cf82e9106cd288907f2616340a855ae7f1a079cee6803bb5091d17458e77b60; expected=3cf82e9106cd288907f2616340a855ae7f1a079cee6803bb5091d17458e77b60"
+    },
+    {
+      "check": "sha256:results/ablation/within_celltype/figures/Figure4_within_celltype_ABCD.svg",
+      "passed": true,
+      "detail": "observed=e261361d68231b35643f286424879cce978dcc2b312440aa8e19b21985b3aea1; expected=e261361d68231b35643f286424879cce978dcc2b312440aa8e19b21985b3aea1"
+    }
+  ]
+}

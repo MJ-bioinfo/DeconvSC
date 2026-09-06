@@ -1,0 +1,22 @@
+artifact,kind,reference_shape,rerun_shape,structure_match,max_abs_numeric_difference,nonnumeric_match,passed
+input_manifest.csv,csv,"(7, 5)","(7, 5)",True,0.0,True,True
+input_schema_audit.csv,csv,"(4, 15)","(4, 15)",True,0.0,True,True
+provenance_checks.csv,csv,"(1, 9)","(1, 9)",True,0.0,True,True
+architecture_equivalence_audit.csv,csv,"(7, 5)","(7, 5)",True,0.0,True,True
+protocol_deviations.csv,csv,"(2, 7)","(2, 7)",True,0.0,True,True
+eligibility_matrix.csv,csv,"(8, 4)","(8, 4)",True,0.0,True,True
+cell_count_audit.csv,csv,"(213, 4)","(213, 4)",True,0.0,True,True
+setting_eligibility.csv,csv,"(240, 11)","(240, 11)",True,0.0,True,True
+within_type_gene_panel.csv,csv,"(5500, 5)","(5500, 5)",True,0.0,True,True
+within_type_modules.csv,csv,"(155, 7)","(155, 7)",True,0.0,True,True
+within_type_metrics_by_seed.csv,csv,"(1480, 31)","(1480, 31)",True,0.0,True,True
+within_type_metrics_by_celltype.csv,csv,"(148, 23)","(148, 23)",True,0.0,True,True
+module_l2_by_celltype_module_seed.csv,csv,"(7220, 12)","(7220, 12)",True,0.0,True,True
+hub_jaccard_by_celltype_hub_seed.csv,csv,"(18000, 6)","(18000, 6)",True,0.0,True,True
+statistical_tests.csv,csv,"(9, 22)","(9, 22)",True,0.0,True,True
+sensitivity_analysis.csv,csv,"(12, 20)","(12, 20)",True,0.0,True,True
+figure4_inputs/topology_metrics_long.csv,csv,"(72, 9)","(72, 9)",True,0.0,True,True
+figure4_inputs/paired_statistics.csv,csv,"(9, 22)","(9, 22)",True,0.0,True,True
+raw_distributions.npz,npz,19 keys,19 keys,True,0.0,True,True
+figure4_inputs/module_l2_withinType_dists.npz,npz,7 keys,7 keys,True,0.0,True,True
+figure4_inputs/within_celltype_panel_data.npz,npz,13 keys,13 keys,True,0.0,True,True

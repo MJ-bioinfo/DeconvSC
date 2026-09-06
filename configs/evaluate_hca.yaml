@@ -1,0 +1,38 @@
+input:
+  generated_h5ad: work/hca/predict/generated_data.h5ad
+  # Held-out single-cell validation reference. Already log1p (the simulation stored log space),
+  # so evaluation.real_is_raw = false.
+  real_sc_path: processed_data/simulation_data/HCA/gt_validation.h5ad
+  other_generated_h5ad: null
+
+annotation:
+  real_celltype_key: "Cell_type"
+  real_sample_key: "pseudo_bulk_id"
+  generated_celltype_key: "Cell_type"
+  generated_sample_key: "Sample"
+  # Generated Sample == GT pseudo_bulk_id (same 105 ids), so no remap needed.
+  gt_sample_map: null
+
+evaluation:
+  real_is_raw: false            # GT validation cells are already log1p (de-log handled internally)
+  sample_level: true            # per-(pseudo_bulk, cell_type) pseudobulk axes
+  marker_top_n: 30
+  heatmap_top_n: 5
+  umap_per_sample: 90
+  umap_sample_limit: 28
+  make_umap: true
+  make_heatmap: true
+  emf: true
+  # (legacy attention / co-expression analyses only)
+  normalize_real_sc: true
+  target_sum: 10000
+  log1p: true
+  n_top_genes_network: 500
+  n_top_genes_attention: 1000
+
+runtime:
+  seed: 18
+  device: cpu
+
+output:
+  output_dir: work/hca/evaluate

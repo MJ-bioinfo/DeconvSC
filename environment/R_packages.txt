@@ -1,0 +1,23 @@
+R 4.4.3
+CellChat 2.2.0.9001 (jinworks/CellChat@75253cd0c9e68410e6e721a6d3a0419a1d7e358f)
+GSVA 2.0.0
+limma 3.62.1
+monocle 2.34.0
+ComplexHeatmap 2.22.0
+circlize 0.4.18
+BiocParallel 1.40.0
+reticulate 1.46.0
+Matrix 1.7.5
+dplyr 1.2.1
+tidyr 1.3.2
+stringr 1.6.0
+ggplot2 4.0.3
+patchwork 1.3.2
+svglite 2.2.2
+systemfonts 1.3.2
+Biobase 2.66.0
+msigdbr 26.1.0
+tibble 3.3.1
+purrr 1.2.2
+RColorBrewer 1.1.3
+future 1.70.0

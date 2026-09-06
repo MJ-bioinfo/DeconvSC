@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='260.79pt' height='187.09pt' viewBox='0 0 260.79 187.09'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwyNjAuNzl8MC4wMHwxODcuMDk='>
+    <rect x='0.00' y='0.00' width='260.79' height='187.09' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwyNjAuNzl8MC4wMHwxODcuMDk=)'>
+<rect x='-0.000000000000032' y='0.00' width='260.79' height='187.09' style='stroke-width: 0.68; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMjIuMzB8MjU3LjMwfDMuNDl8MTQyLjg3'>
+    <rect x='22.30' y='3.49' width='235.00' height='139.39' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMjIuMzB8MjU3LjMwfDMuNDl8MTQyLjg3)'>
+<rect x='22.30' y='3.49' width='235.00' height='139.39' style='stroke-width: 0.68; stroke: none; fill: #FFFFFF;' />
+<rect x='28.06' y='122.46' width='16.13' height='14.08' style='stroke-width: 0.68; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2F5D8A;' />
+<rect x='51.10' y='118.94' width='16.13' height='17.60' style='stroke-width: 0.68; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2F5D8A;' />
+<rect x='74.14' y='117.76' width='16.13' height='18.77' style='stroke-width: 0.68; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2F5D8A;' />
+<rect x='97.18' y='115.42' width='16.13' height='21.12' style='stroke-width: 0.68; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2F5D8A;' />
+<rect x='120.22' y='115.42' width='16.13' height='21.12' style='stroke-width: 0.68; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2F5D8A;' />
+<rect x='143.26' y='115.42' width='16.13' height='21.12' style='stroke-width: 0.68; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2F5D8A;' />
+<rect x='166.30' y='114.24' width='16.13' height='22.29' style='stroke-width: 0.68; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2F5D8A;' />
+<rect x='189.34' y='95.47' width='16.13' height='41.06' style='stroke-width: 0.68; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2F5D8A;' />
+<rect x='212.37' y='19.21' width='16.13' height='117.33' style='stroke-width: 0.68; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2F5D8A;' />
+<rect x='235.41' y='9.82' width='16.13' height='126.71' style='stroke-width: 0.68; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #2F5D8A;' />
+</g>
+<g clip-path='url(#cpMC4wMHwyNjAuNzl8MC4wMHwxODcuMDk=)'>
+<polyline points='22.30,142.87 22.30,3.49 ' style='stroke-width: 0.64; stroke-linecap: square;' />
+<text x='19.17' y='138.77' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>0</text>
+<text x='19.17' y='103.57' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>30</text>
+<text x='19.17' y='68.38' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>60</text>
+<text x='19.17' y='33.18' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>90</text>
+<polyline points='20.56,136.54 22.30,136.54 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='20.56,101.34 22.30,101.34 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='20.56,66.14 22.30,66.14 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='20.56,30.94 22.30,30.94 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='22.30,142.87 257.30,142.87 ' style='stroke-width: 0.64; stroke-linecap: square;' />
+<polyline points='36.13,144.62 36.13,142.87 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='59.17,144.62 59.17,142.87 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='82.21,144.62 82.21,142.87 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='105.24,144.62 105.24,142.87 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='128.28,144.62 128.28,142.87 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='151.32,144.62 151.32,142.87 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='174.36,144.62 174.36,142.87 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='197.40,144.62 197.40,142.87 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='220.44,144.62 220.44,142.87 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<polyline points='243.48,144.62 243.48,142.87 ' style='stroke-width: 0.64; stroke-linecap: butt;' />
+<text transform='translate(39.29,149.17) rotate(-45)' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>THBS</text>
+<text transform='translate(62.33,149.17) rotate(-45)' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>CCL</text>
+<text transform='translate(85.37,149.17) rotate(-45)' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>WNT</text>
+<text transform='translate(108.41,149.17) rotate(-45)' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>BMP</text>
+<text transform='translate(131.44,149.17) rotate(-45)' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>CXCL</text>
+<text transform='translate(154.48,149.17) rotate(-45)' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>RA</text>
+<text transform='translate(177.52,149.17) rotate(-45)' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>ADGRL</text>
+<text transform='translate(200.56,149.17) rotate(-45)' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>SEMA3</text>
+<text transform='translate(223.60,149.17) rotate(-45)' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>LAMININ</text>
+<text transform='translate(246.64,149.17) rotate(-45)' text-anchor='end' style='font-size: 6.50px; font-family: "Arial";'>COLLAGEN</text>
+<text x='139.80' y='182.04' text-anchor='middle' style='font-size: 7.50px; font-family: "Arial";'>Pathway</text>
+<text transform='translate(8.65,73.18) rotate(-90)' text-anchor='middle' style='font-size: 7.50px; font-family: "Arial";'>Count</text>
+</g>
+</g>
+</svg>

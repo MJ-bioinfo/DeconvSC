@@ -1,0 +1,2 @@
+check,n_profiles,n_genes,max_abs_difference,median_profile_max_abs_difference,tolerance,passed,source_h5ad,reference_profiles
+figure3_deconv_h5ad_to_verified_profile,48,16801,3.406649990544963e-06,7.200846363630831e-07,1e-05,True,/disk1/maijl/deconv/cVAE/GSE141115/attention_geneembed/generated_data.h5ad,/disk1/maijl/deconv/cVAE/evaluation_unified_pearson_20260528/02_intermediate/GSE141115/pb_predicted_log1p_cp10k.csv.gz

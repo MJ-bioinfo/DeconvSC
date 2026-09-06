@@ -1,0 +1,12 @@
+input:
+  sc_path: processed_data/real_data/mouse_kidney/train_data_canonical20.h5ad
+  bulk_path: processed_data/real_data/mouse_kidney/bulk_counts.txt
+  celltype_label: "__lab"
+  sep: "\t"
+
+output:
+  output_dir: work/gse141115/preprocess
+
+runtime:
+  seed: 18
+  device: cpu

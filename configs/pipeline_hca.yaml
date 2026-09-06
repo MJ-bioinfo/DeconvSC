@@ -1,0 +1,14 @@
+# DeconvSC full pipeline (preprocess -> train -> predict[prior-anchored] -> evaluate)
+# The release reuses the locked HCA checkpoint. Preprocessing is enabled to rebuild
+# the portable metadata/tensor bundle; training remains off by default.
+steps:
+  preprocess: true
+  train: false
+  predict: true
+  evaluate: true
+
+configs:
+  preprocess: configs/preprocess_hca.yaml
+  train: configs/train_hca.yaml
+  predict: configs/predict_hca.yaml
+  evaluate: configs/evaluate_hca.yaml

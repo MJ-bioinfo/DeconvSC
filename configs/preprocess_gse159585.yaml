@@ -1,0 +1,10 @@
+input:
+  sc_path: processed_data/real_data/human_lung/train_data.h5ad
+  bulk_path: processed_data/real_data/human_lung/bulk_counts.txt
+  celltype_label: "cell type"
+  sep: "\t"
+runtime:
+  seed: 18
+  device: cpu
+output:
+  output_dir: work/gse159585/preprocess

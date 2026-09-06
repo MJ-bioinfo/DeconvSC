@@ -1,0 +1,26 @@
+CellType,Value,Method
+Tubular cells,0.560315399776497,BayesPrism
+Immune cells,0.385445383361825,BayesPrism
+Collecting duct cells,0.50546412527762,BayesPrism
+Stromal cells,0.644572577207119,BayesPrism
+Glomerular cells,0.756076786351314,BayesPrism
+Tubular cells,0.611136710803542,DISSECT
+Immune cells,0.596155200034174,DISSECT
+Collecting duct cells,0.654198627635048,DISSECT
+Stromal cells,0.722302794498263,DISSECT
+Glomerular cells,0.730839597973795,DISSECT
+Tubular cells,0.356127602098946,TAPE
+Immune cells,0.513264070296605,TAPE
+Collecting duct cells,0.469542035895124,TAPE
+Stromal cells,0.710000076762826,TAPE
+Glomerular cells,0.647472998999534,TAPE
+Tubular cells,0.841660725454722,DeconvSC
+Immune cells,0.825886675217351,DeconvSC
+Collecting duct cells,0.860133302878418,DeconvSC
+Stromal cells,0.892284916561075,DeconvSC
+Glomerular cells,0.884957402255278,DeconvSC
+Collecting duct cells,0.495409685781909,CIBERSORTx
+Glomerular cells,0.235146087026606,CIBERSORTx
+Immune cells,0.157573958464899,CIBERSORTx
+Tubular cells,0.462756984425268,CIBERSORTx
+Stromal cells,0.298498166952098,CIBERSORTx

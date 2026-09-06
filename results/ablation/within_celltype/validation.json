@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "no_real_split": true,
+  "sampling_rule": "min(Test, DeconvSC, BaseVAE, 200) within cell type and donor",
+  "seeds": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033
+  ],
+  "all_pca_ranks_50": true,
+  "all_scores_in_bounds": true,
+  "deconvsc_higher_cell_types": 6,
+  "n_cell_types": 6
+}
