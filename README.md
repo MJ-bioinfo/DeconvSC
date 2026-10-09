@@ -3,22 +3,11 @@
 Version 1.0.0, frozen on 2026-08-09.
 
 This directory is the standalone release package for the DeconvSC manuscript
-workflow. It contains the portable code, configuration files, processed input
-data, locked model weights, generated single-cell-resolution expression
-matrices, frozen benchmark tables, manuscript figures, downstream result
+workflow. It contains the portable code, configuration files, frozen benchmark tables, manuscript figures, downstream result
 objects, environment files and provenance records needed to inspect or
 reproduce the submitted results.
 
-The fastest reviewer path is:
-
-```bash
-python scripts/validate_release.py
-sha256sum -c MANIFEST.sha256
-```
-
-The validation report at `provenance/validation_report.json` records 78/78
-package checks passing at release time. The checksum file covers the released
-files and should pass after download or upload.
+The processed input data is too large to be stored in github and is stored in figshare(
 
 ## Reproduction Overview
 
@@ -36,7 +25,7 @@ The table below links each analysis block to its released data and code.
 
 | Analysis block | Manuscript outputs | Source data in this package | Main reproduction code |
 |---|---|---|---|
-| Model evaluation | Figures 2 and 3, Supplementary Figure 3, benchmark tables | `benchmark_tables/expression_prediction/03_result_tables/`, `model_outputs/` | `code/03_model_evaluation/`, `scripts/evaluate_prediction.py` |
+| Model evaluation | Figures 2 and 3, Supplementary Figure 3, benchmark tables | `benchmark_tables/expression_prediction/03_result_tables/`| `code/03_model_evaluation/`, `scripts/evaluate_prediction.py` |
 | Ablation analysis | Figure 4 and ablation result tables | `results/ablation/`, `model_outputs/GSE141115/` | `code/04_ablation/` |
 | Downstream validation | Figure 5, Figure 6 and downstream result objects | `results/downstream/`, `model_outputs/GSE159585/`, `model_outputs/GSE226077/` | `code/05_downstream/` |
 | Release validation | Package checksums and provenance | `MANIFEST.sha256`, `provenance/` | `scripts/validate_release.py`, `scripts/build_release_manifests.py` |
@@ -60,9 +49,6 @@ More detailed source mapping is available in:
 | `code/03_model_evaluation/` | Expression-prediction benchmark code, Supplementary Figure 5 code and shared evaluation helpers. |
 | `code/04_ablation/` | Figure 4 ablation code, including within-cell-type topology metrics and PCA <= 50 co-expression-profile analysis. |
 | `code/05_downstream/` | Downstream CellChat, ssGSEA/GSVA, Monocle2 and Figure 6 plotting code. |
-| `processed_data/` | Processed reference, bulk and held-out validation data used by the manuscript workflow. |
-| `model_weights/` | Locked CVAE checkpoints and cell-type prior tensors used for released inference. |
-| `model_outputs/` | Locked generated single-cell-resolution expression matrices, named by manuscript role. |
 | `metadata/` | Cell-type label maps and compact `.obs` metadata exported from generated H5AD files. |
 | `benchmark_tables/` | Frozen expression-prediction and proportion benchmark tables used for Figures 2 and 3 and Supplementary Figure 3. |
 | `results/` | Frozen result tables, source objects and figures for ablation, Supplementary Figure 5 and downstream analyses. |
@@ -71,8 +57,7 @@ More detailed source mapping is available in:
 | `docs/` | Reserved for additional documentation; currently not required for reproduction. |
 
 The supported portable entry points are `scripts/`, `deconvsc/`, `configs/` and
-`code/`. The directory `provenance/source_snapshot_deconv_20260610/` contains
-an unmodified snapshot of the historical workstation scripts for audit only.
+`code/`.
 Those files retain original absolute paths and are not the recommended run
 interface.
 
@@ -109,51 +94,6 @@ interface.
 | `scripts/build_release_manifests.py` | Builds release manifests. |
 | `scripts/export_release_metadata.py` | Exports compact metadata from released artifacts. |
 | `scripts/make_archive.sh` | Creates the uploadable archive. |
-
-### Input data: `processed_data/`
-
-| Path | Meaning |
-|---|---|
-| `processed_data/real_data/mouse_kidney/` | GSE141115 mouse kidney reference, bulk and held-out real data. |
-| `processed_data/real_data/mouse_kidney/train_data.h5ad` | GSE141115 training reference. |
-| `processed_data/real_data/mouse_kidney/test_data.h5ad` | GSE141115 held-out ground-truth single-cell/snRNA data. |
-| `processed_data/real_data/mouse_kidney/bulk_counts.txt` | GSE141115 bulk-count input. |
-| `processed_data/real_data/mouse_kidney/train_data_canonical20.h5ad` | Canonical 20-cell-type GSE141115 reference used by the release checks. |
-| `processed_data/real_data/human_lung/` | GSE159585 human lung reference, bulk and held-out real data. |
-| `processed_data/real_data/human_iMGL/` | GSE226077 human iMGL reference and bulk TPM input. |
-| `processed_data/simulation_data/HCA/` | HCA simulation reference, synthetic bulk and validation truth. |
-
-### Locked model weights: `model_weights/`
-
-| Path | Meaning |
-|---|---|
-| `model_weights/GSE141115/deconvsc/` | GSE141115 attention-CVAE checkpoint and prior tensors. |
-| `model_weights/GSE159585/benchmark_reference/` | GSE159585 main benchmark checkpoint and prior tensors. |
-| `model_weights/GSE159585/covid_application/` | COVID-19 lung downstream checkpoint, prior tensors and gene metadata. |
-| `model_weights/GSE159585/normal_application/` | Normal-lung downstream checkpoint, prior tensors and gene metadata. |
-| `model_weights/HCA/fold2/` | HCA fold-2 checkpoint and prior tensors. |
-| `model_weights/GSE226077/application/` | iMGL downstream checkpoint, prior tensors and gene/signature metadata. |
-
-The main checkpoint files are `scvae_best.pth`; the cell-type prior files are
-`cell_type_mu_logvar_best.pt`.
-
-### Locked generated outputs: `model_outputs/`
-
-| File | Manuscript role |
-|---|---|
-| `model_outputs/GSE141115/prophead_generated.h5ad` | Main GSE141115 expression benchmark output. |
-| `model_outputs/GSE141115/figure4_suppfigure5_deconvsc_generated.h5ad` | Locked DeconvSC matrix for Figure 4 and Supplementary Figure 5. |
-| `model_outputs/GSE141115/figure4_ablated_vae_generated.h5ad` | Locked ablated-VAE matrix for Figure 4. |
-| `model_outputs/GSE159585/prophead_generated.h5ad` | Main GSE159585 benchmark output. |
-| `model_outputs/GSE159585/covid_application_generated.h5ad` | COVID-19 lung downstream output. |
-| `model_outputs/GSE159585/normal_application_generated.h5ad` | Normal-lung downstream output. |
-| `model_outputs/HCA/prophead_generated.h5ad` | HCA fold-2 benchmark output. |
-| `model_outputs/GSE226077/prophead_generated.h5ad` | iMGL downstream output. |
-
-Do not interchange the GSE141115 prophead benchmark matrix with the separate
-Figure 4/Supplementary Figure 5 matrix. Their roles and hashes are documented in
-`provenance/ARTIFACT_SOURCE_MAP.tsv` and
-`provenance/ARTIFACT_MANIFEST.tsv`.
 
 ### Metadata: `metadata/`
 
@@ -249,10 +189,6 @@ python code/03_model_evaluation/supplementary_figure5/build_supplementary_figure
 ```
 
 Model-evaluation inputs are in:
-
-- `processed_data/`
-- `model_weights/`
-- `model_outputs/`
 - `benchmark_tables/expression_prediction/03_result_tables/`
 
 Frozen model-evaluation outputs are in:
@@ -324,14 +260,12 @@ python code/05_downstream/figure6_ab_gse226077.py
 ```
 
 Downstream inputs are in:
-
 - `processed_data/real_data/human_lung/`
 - `processed_data/real_data/human_iMGL/`
 - `model_outputs/GSE159585/`
 - `model_outputs/GSE226077/`
 
 Downstream outputs are in:
-
 - `results/downstream/GSE159585/`
 - `results/downstream/GSE226077/`
 
