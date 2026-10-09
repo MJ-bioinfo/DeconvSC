@@ -1,4 +1,4 @@
-# DeconvSC Figshare Reproduction Package
+f# DeconvSC Figshare Reproduction Package
 
 Version 1.0.0, frozen on 2026-08-09.
 
@@ -7,7 +7,7 @@ workflow. It contains the portable code, configuration files, frozen benchmark t
 objects, environment files and provenance records needed to inspect or
 reproduce the submitted results.
 
-The processed input data is too large to be stored in github and is stored in figshare(
+The processed input data and model output are too large to be stored in github and is stored in figshare(https://figshare.com/s/46cd657157ed80a8c1a6)
 
 ## Reproduction Overview
 
