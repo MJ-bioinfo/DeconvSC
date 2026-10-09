@@ -7,7 +7,7 @@ workflow. It contains the portable code, configuration files, frozen benchmark t
 objects, environment files and provenance records needed to inspect or
 reproduce the submitted results.
 
-The processed input data and model output are too large to be stored in github and is stored in figshare(https://figshare.com/s/46cd657157ed80a8c1a6)
+The processed input data, model weights and model output are too large to be stored in github and are stored in figshare(https://figshare.com/s/46cd657157ed80a8c1a6).
 
 ## Reproduction Overview
 
@@ -150,17 +150,6 @@ export MSIGDB_SNAPSHOT=/path/to/authorized/msigdb_2025.1.Hs.rds
 
 Run commands from the package root.
 
-### Step 0: validate the release package
-
-```bash
-cd /workpath
-python scripts/validate_release.py
-sha256sum -c MANIFEST.sha256
-```
-
-Expected result: all required release checks pass, and all files listed in
-`MANIFEST.sha256` verify successfully.
-
 ### Step 1: reproduce model-evaluation results
 
 Run the full released-checkpoint pipelines for the three benchmark datasets.
@@ -222,16 +211,12 @@ python code/04_ablation/within_celltype/run_no_real_split.py
 python code/04_ablation/within_celltype/scripts/validate_figure4_pca50.py
 ```
 
-Ablation inputs are in:
-
+Data used in ablation is in figshare:
 - `processed_data/real_data/mouse_kidney/test_data.h5ad`
 - `model_outputs/GSE141115/figure4_suppfigure5_deconvsc_generated.h5ad`
 - `model_outputs/GSE141115/figure4_ablated_vae_generated.h5ad`
-- `results/ablation/within_celltype/figure4_inputs/`
-- `results/ablation/alpha_sweep/`
 
 Ablation outputs are in:
-
 - `results/ablation/within_celltype/`
 - `results/ablation/alpha_sweep/`
 
@@ -245,7 +230,7 @@ GSE159585 COVID-19/normal lung:
 ```bash
 python code/05_downstream/prep_ssgsea_avg.py
 MSIGDB_SNAPSHOT=/path/to/msigdb_2025.1.Hs.rds \
-  Rscript code/05_downstream/ssGSEA_linux.R
+Rscript code/05_downstream/ssGSEA_linux.R
 Rscript code/05_downstream/cellchat_linux.R
 ```
 
@@ -254,12 +239,12 @@ GSE226077 iMGL:
 ```bash
 python code/05_downstream/prep_ssgsea_gse226077.py
 MSIGDB_SNAPSHOT=/path/to/msigdb_2025.1.Hs.rds \
-  Rscript code/05_downstream/ssGSEA_GSE226077_linux.R
+Rscript code/05_downstream/ssGSEA_GSE226077_linux.R
 Rscript code/05_downstream/monocle2_GSE226077_linux.R
 python code/05_downstream/figure6_ab_gse226077.py
 ```
 
-Downstream inputs are in:
+Downstream inputs are in figshare:
 - `processed_data/real_data/human_lung/`
 - `processed_data/real_data/human_iMGL/`
 - `model_outputs/GSE159585/`
