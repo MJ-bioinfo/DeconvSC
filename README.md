@@ -12,7 +12,6 @@ reproduce the submitted results.
 The fastest reviewer path is:
 
 ```bash
-cd /disk1/maijl/deconv/papercode2
 python scripts/validate_release.py
 sha256sum -c MANIFEST.sha256
 ```
@@ -185,7 +184,7 @@ Figure 4/Supplementary Figure 5 matrix. Their roles and hashes are documented in
 Create the Python environment:
 
 ```bash
-cd /disk1/maijl/deconv/papercode2
+cd /workpath
 conda env create -f environment/conda_environment.yml
 conda activate deconvsc
 pip install -r environment/requirements.txt
@@ -214,7 +213,7 @@ Run commands from the package root.
 ### Step 0: validate the release package
 
 ```bash
-cd /disk1/maijl/deconv/papercode2
+cd /workpath
 python scripts/validate_release.py
 sha256sum -c MANIFEST.sha256
 ```
@@ -355,10 +354,6 @@ work/<dataset>/train/scvae_best.pth
 
 ## Reproducibility Boundary
 
-The main benchmark matrices in `model_outputs/*/prophead_generated.h5ad` and
-the tables in `benchmark_tables/expression_prediction/03_result_tables/` come
-from the 20260610 prophead workflow.
-
 Historical end-to-end bitwise retraining cannot be claimed because the original
 online residual-network and proportion-head states were not saved as standalone
 checkpoints with complete optimizer states and solver metadata. The released
@@ -371,25 +366,3 @@ the summary unit for the displayed Figure 4 distributions; cells, genes, gene
 pairs, modules and random seeds are not independent biological replicates.
 
 See `provenance/REPRODUCIBILITY_SCOPE.md` for the full boundary statement.
-
-## Final Upload Check
-
-Before uploading to figshare, run:
-
-```bash
-cd /disk1/maijl/deconv/papercode2
-python scripts/validate_release.py
-sha256sum -c MANIFEST.sha256
-```
-
-The prepared archive from this release was:
-
-```text
-/disk1/maijl/deconv/DeconvSC_Figshare_v1.0.0.tar.gz
-```
-
-The archive checksum is written to the sidecar file:
-
-```text
-/disk1/maijl/deconv/DeconvSC_Figshare_v1.0.0.tar.gz.sha256
-```
